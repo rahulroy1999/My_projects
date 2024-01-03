@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #8ed0d9;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">EyeCare Xp</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Clinic 
+              </a>
+              <ul class="dropdown-menu">
+                
+                <a class="dropdown-item" href="#">Kolkata</a>
+                <a class="dropdown-item" href="#">Pune</a>
+                  <a class="dropdown-item" href="#">Bangalore</a>
+                  <a class="dropdown-item" href="#">Delhi</a>
+                  <a class="dropdown-item" href="#">Hydrabad</a>
+                  <a class="dropdown-item" href="#">Mumbai</a>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Search</a></li>
+                <li><a class="dropdown-item" href="#"></a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Clinic Log in</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Clinic Nearby" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+          <div class="mx-2">
+        <button type="button" class="btn btn-primary me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+      </div>
+      </div>
+     </div>
+    </nav>
+
+
+<!--sign up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Creat accountLog in to eBook101</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Cofirmm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Accept Terms & Conditions</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Creat account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel1">Log in to eBook101</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Accept Terms & Condition</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="vecteezy_girl-eye-test_16683855_185 (1).jpeg" class="firstimg d-block w-100" height="420" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Welcome To EyeCare Xp</h1>
+            <h3 class="h3carousel">Book your eye check-up appointment online</h3>
+            <button class="btn btn-secondary">Appointment</button>
+            <button class="btn btn-primary">Online Consult</button>
+            <button class="btn btn-success">Emergency HelpLine</button>
+          </div>
+        </div>
+        <div class="carousel-item" >
+          <img src="vecteezy_selective-focus-at-women-face-while-doctor-using-optometry_12999262_217.jpg" class="d-block w-100" height="420" alt="...">
+          <div class="carousel-caption d-none d-md-block" >
+            <h5>Blogs</h5>
+            <p>Read blogs on recent news and updates acording to your taste</p>
+            <button class="btn btn-secondary">Story</button>
+            <button class="btn btn-primary">Blog</button>
+            <button class="btn btn-success">Publish</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1800x400/?eye-Doctor'" class="d-block w-100" height="420" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Wanna be an Author</h5>
+            <p>Have passion for writing ! want to become an Author !! send your writings(story/poem/novel...) to us at ebook101@gmail.com</p>
+            <button class="btn btn-secondary">Story</button>
+            <button class="btn btn-primary">Blog</button>
+            <button class="btn btn-success">Publish</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+
+<div id="artical">Read Some Top Articals From Health Experts =>> </div>
+    <div class="container my-4">
+      <!--my-4 : margin in y axis 4 (mx for x axis/  ml and mr for margin left and right )-->
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Trending</strong>
+              <h3 class="mb-0">Can lower brightness reduce eye strain?</h3>
+              <div class="mb-1 text-body-secondary">DR. SHILPI GANG</div>
+              <p class="card-text mb-auto">Introduction In today’s digital age, we spend more time than ever staring at screens, be it on our computers, smartphones, tablets, or televisions. While these devices have brought numerous conveniences to our lives...</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Read more
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="vecteezy_feeling-tired-and-depressed-depressed-young-man-in-shirt_13537982_574.jpeg" svg class="bd-placeholder-img" width="250" height="318"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect></svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis">Most Viewed</strong>
+              <h3 class="mb-0 fs-4">Detecting Brain Disease Using the Eye</h3>
+              <div class="mb-1 text-body-secondary">Reviewed by Dr. Mary Cooke, Ph.D.</div>
+              <p class="mb-auto">The human eye shares several vascular and neural similarities to the brain, and hence, our eyes have been found to offer a direct window to brain pathology. The unique characteristics of our eyes allow them to be a relatively..</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Read more
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="olga-guryanova-nEuceJ-6-nk-unsplash.jpg" svg class="bd-placeholder-img" width="250" height="318" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-4">
+      <!--my-4 : margin in y axis 4 (mx for x axis/  ml and mr for margin left and right )-->
+      <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary-emphasis">Blog of the Week</strong>
+              <h3 class="mb-0">Causes of eye cancer</h3>
+              <div class="mb-1 text-body-secondary"> Dr. Ananya Mandal, MD
+              </div>
+              <p class="card-text mb-auto">There are no definitive causes of eye cancers.However, there are certain risk factors that are associated with eye cancers. Individuals with these traits are more prone to develop these cancers.There is however no direct association with these risk factors.</p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Read more
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="olga-guryanova-tMFeatBSS4s-unsplash.jpg" svg class="bd-placeholder-img" width="250" height="318"  role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect></svg>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-success-emphasis">Newly added</strong>
+              <h3 class="mb-0 ">Top Causes of Blindness and Vision Loss</h3>
+              <div class="mb-1 text-body-secondary">DR. TANVI JAIN In Eye Hospital</div>
+              <p class="mb-auto">In India alone, over 62 million people live with some form of visual impairment. The most common causes of blindness and vision loss include cataracts, glaucoma, diabetic retinopathy.. </p>
+              <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                Read more
+                <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+              </a>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <img src="national-cancer-institute-xcN1taJ2y0M-unsplash.jpg" svg class="bd-placeholder-img" width="250" height="318" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container px-4 py-1" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Few Signs You Need An Eye Test</h2>
+    
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"> <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+              </svg> Wavy vision</h3>
+              <p>Wavy vision is how optometrists describe eye symptoms in which you see waves or zig-zag lines surrounding an object or person. This could be a sign of macular degeneration, so you don’t want to delay in getting an eye appointment scheduled.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-eyeglasses" viewBox="0 0 16 16">
+                    <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A1.993 1.993 0 0 0 8 6c-.532 0-1.016.208-1.375.547zM14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                  </svg> Eye pressure</h3>
+              <p>One of the most often ignored eye symptoms that people experience is pressure in the eyes. It’s somewhat easy to disregard, since it doesn’t seem like it could be much of a problem. However, eye pressure can signal glaucoma or ocular hypertension.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-disc-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-6 0a2 2 0 1 0-4 0 2 2 0 0 0 4 0zM4 8a4 4 0 0 1 4-4 .5.5 0 0 0 0-1 5 5 0 0 0-5 5 .5.5 0 0 0 1 0zm9 0a.5.5 0 1 0-1 0 4 4 0 0 1-4 4 .5.5 0 0 0 0 1 5 5 0 0 0 5-5z"/>
+              </svg> Frequent headaches</h3>
+              <p>Perhaps the only thing worse than experiencing a bad headache is experiencing these headaches on a regular basis. If you’ve been dealing with this issue, it could be your body’s way of revealing some negative eye symptoms that speak to bigger problems.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bullseye" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M8 13A5 5 0 1 1 8 3a5 5 0 0 1 0 10zm0 1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/>
+                    <path d="M9.5 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg> Double vision</h3>
+              <p>Double vision is what it sounds like; a problem in which you see two of what is before you. You might also have blurred vision, which often accompanies double vision. Either way, seeing double is a good reason to get an eye exam.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+                    <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+                  </svg> Difficulty seeing at night</h3>
+              <p>Nighttime is notorious for making your eyes work harder, but that doesn’t mean that discomfort is normal. If you struggle to see at night, or feel undue strain on your eyes as the day grows darker, see your doctor.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-dizzy-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM8 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                  </svg> Eye strain or fatigue</h3>
+              <p>Have you ever read something up close and then shifted your eyes to look at something else far away? When you repeat this action a few times, you might notice that your eyes begin to feel very tired. </p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.012 4.158c1.858 0 2.96-1.582 2.96-3.99V7.84c0-2.426-1.079-3.996-2.936-3.996-1.864 0-2.965 1.588-2.965 3.996v.328c0 2.42 1.09 3.99 2.941 3.99Z"/>
+                  </svg> Seeing halos</h3>
+              <p>If you see a bright circle of light surrounding light sources, you are seeing halos. This could be indicative of cataracts, which are the leading cause of blindness. If caught early, they usually can be treated quickly.</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-emoji-dizzy-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM4.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM8 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
+                  </svg> Eye strain or fatigue</h3>
+              <p>Have you ever read something up close and then shifted your eyes to look at something else far away? When you repeat this action a few times, you might notice that your eyes begin to feel very tired. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p>Biggest eBook collection from all the different genres , daily blogs , giving chance to the newly passionate authors</p>
+        <p>New to eBook101? join our bookworm community <a href="https://discord.com/invite/eBook101">join our discord</a> or reddit <a href="https://www.linkedin.com/feed/">Join reddit</a>.</p>
+      </div>
+    </footer>
+    <footer class="container">
+      <p class="float-end"><a href="#">Back to top</a></p>
+      <p>© 2017–2023 eBooK , Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </footer>
+
+   
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    
+        
+    
+    
+  </body>
+</html>
